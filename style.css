@@ -86,6 +86,47 @@ section article.profile h2 {
     margin-bottom: 30px;
 }
 
+section a.btnView {
+    display: block;
+    width: 180px;
+    height: 32px;
+    margin: 0px auto 20px;
+    background-color: #444444;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 32px;
+    text-align: center;
+    background: linear-gradient(45deg, #4affff, #35e0f7);
+    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.493);
+}
+
+section ul.contact li {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+section ul.contact li:last-child {
+    border-bottom: none;
+}
+
+section ul.contact li i {
+    width: 20%;
+    text-align: center;
+    color: #555555;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px #dddddd;
+}
+
+section ul.contact li span {
+    font-weight: normal;
+    font-size: 11px;
+    color: #555555;
+    letter-spacing: 1px;
+}
+
 /* 방명록 */ 
 
 #app-container {
