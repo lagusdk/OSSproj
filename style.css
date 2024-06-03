@@ -85,3 +85,138 @@ section article.profile h2 {
     color: #bbbbbb;
     margin-bottom: 30px;
 }
+
+/* 방명록 */ 
+
+#app-container {
+    flex: 1;
+    display: flex;
+    max-height: 400px;
+    overflow-y: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#guestbook-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+#guestbook-popup {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    height: 480px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/apricot.jpg");
+}
+
+#guestbook-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    border-bottom: 1px solid #dddddd;
+    color: white;
+}
+
+#guestbook-header h2 {
+    margin: 0;
+}
+
+#guestbook-form {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    background: #f9f9f9;
+    flex-direction: column;
+}
+
+#guestbook-form input[type="text"] {
+    flex: 1;
+    width: 30%;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+}
+
+#guestbook-form textarea {
+    width: 100%;
+    height: auto;
+    resize: none;
+    overflow-y: hidden;
+    margin-bottom: 10px; 
+}
+
+#guestbook-form input {
+    flex-grow: 1;
+    margin-right: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#guestbook-form button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+#messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#messages-display {
+    margin-bottom: auto;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.message-content {
+    flex-grow: 1;
+}
+
+.message-meta {
+    font-size: 12px;
+    color: #666666;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
