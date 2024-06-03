@@ -1,0 +1,35 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'April16th-Promise';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404-2@1.0/April16th-Promise.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+* {
+    font-family: 'April16th-Promise';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #ebfaff;
+}
+
+section {
+    width: 340px;
+    padding: 30px;
+    background-color: #ffffff;
+    margin: 50px auto;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
