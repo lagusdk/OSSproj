@@ -6,4 +6,4 @@
 
 활용한 오픈소스들의 목록 및 링크
 
-1. OSS 10. Static Web w/NginX
+1. OSS 10. Static Web w/NginX _ 온라인 프로필 카드, 기업 페이지
