@@ -1,3 +1,5 @@
+const host = "http://127.0.0.1:5500";
+
 function adjustTextareaHeight(textarea) {
     textarea.style.height = "auto"; // 높이를 자동으로 조정하기 전에 초기화
     textarea.style.height = textarea.scrollHeight + "px"; // 스크롤 높이로 높이 설정
