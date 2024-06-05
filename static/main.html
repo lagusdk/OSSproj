@@ -6,28 +6,29 @@
     <title>OSS project</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="144x144" href="img/Favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/Favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/img/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/img/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="/static/img/Favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c0baa2d4bf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- lnk css&js -->
-    <link rel="stylesheet" href="style.css">
-    <script deter src="lib.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <script deter src="/static/lib.js"></script>
 </head>
 <body>
     <header>
         <div class="inner">
-            <h1><a href="/main.html">TEAPOTFOLIO</a></h1>
+            <h1><a href="/static/main.html">TEAPOTFOLIO</a></h1>
 
             <ul id="gnb"> <!-- global navigation bar -->
-                <li><a href="/menu/abt.html">ABOUT ME</a></li>
+                <li><a href="/static/menu/abt.html">ABOUT ME</a></li>
                 <li><a href="#">MAJOR</a></li>
                 <li><a href="#">SKILL</a></li>
                 <li><a href="#">INTEREST</a></li>
@@ -38,7 +39,7 @@
     </header>
 
     <figure>
-        <video src="img/visual.mp4" autoplay muted loop></video>
+        <video src="/static/img/visual.mp4" autoplay muted loop></video>
         <div class="inner">
             <h1>LAHYEONA</h1>
             <p> 어쩌구 저쩌구! </p>
@@ -104,29 +105,6 @@
             </div>
         </div>
     </footer>
-<!-- 
-전체적인 색감 통일시키기 (컬러팔레트)
-고민중인거
-    처음에는 프로필카드가 딱 뜨게하고
-    프로필카드의 뷰 모어 클릭하면 10장의 기업페이지마냥 홈페이지가 딱 뜨게하고싶음...
-자기소개 페이지
-    자기자신을 소개하기 위한 콘텐츠
-        전공
-        관심분야
-        기타 SNS 링크?
-        취미?
-        포트폴리오 갤러리
-        스킬 트리?
-        시간순의... 무언가? 흠...
-    인터랙티브 요소 활용 (오픈소스 활용 가능)
-간단한 방명록
-    방명록 기록 : fastapi 종료시 삭제되도록
-    작성자 및 작성시간이 오른쪽 중간이 아니라 오른쪽 하단이 되게 수정할것
-    작성 폼 칸 전체를 하단 고정할 것
-    작성 메시지가 많아짐에 따라 작성폼이 안보여버리는 문제 발생. 이럴땐 스크롤 생기게할 것
-    방명록 팝업 아이콘에 마우스 커서를 올려두면 어떤 효과를 주면 좋을 것 같음
-    코드 가독성 수정해야 할 필요. 
-    작성한 방명록 메시지가 날라간 칸 배경이미지 바꿔주기 -->
 
     <div id="guestbook-icon" onclick="toggleGuestbook()">📖</div>
     <div id="guestbook-popup" style="display: none;">
