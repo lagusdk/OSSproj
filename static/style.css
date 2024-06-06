@@ -258,6 +258,32 @@ footer .inner .lower p {
     color: #777777;
 }
 
+/* qr code */
+.overlay {
+    display: none; /* 숨김 상태로 시작 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 검은색 반투명 배경 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
+}
+
+.qr-code-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.qr-code {
+    max-width: 100%;
+    height: auto;
+}
+
 /* profile card */
 
 body {

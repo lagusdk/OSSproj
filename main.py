@@ -14,6 +14,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 origins = [
     "http://127.0.0.1:4000",
     "http://localhost:4000",
+    "44.193.239.247"
 ]
 
 # CORS 미들웨어 추가
@@ -25,10 +26,10 @@ app.add_middleware(
     allow_headers=["*"],  # 모든 HTTP 헤더 허용
 )
 
-# 루트 경로에 접근하면 main.html 파일을 응답으로 제공
+# 루트 경로에 접근하면 index.html 파일을 응답으로 제공
 @app.get("/")
 async def welcome() -> FileResponse:
-    return FileResponse('static/main.html')
+    return FileResponse('static/index.html')
 
 # guest_router를 FastAPI 애플리케이션에 포함시킴
 app.include_router(guest_router)

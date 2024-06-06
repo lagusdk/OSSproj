@@ -123,4 +123,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageTextarea = document.getElementById('message');
     adjustTextareaHeight(messageTextarea);
     fetchDataFromServer();
+
+    // QR 코드 링크 클릭 이벤트 설정
+    const qrcodeLink = document.getElementById('qrcode-link');
+    const overlay = document.getElementById('overlay');
+
+    qrcodeLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        overlay.style.display = 'flex';
+    });
+
+    overlay.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    });
 });
