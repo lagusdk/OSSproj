@@ -10,6 +10,12 @@ function adjustTextareaHeight(textarea) {
 function toggleGuestbook() {
     const guestbookPopup = document.getElementById('guestbook-popup');
     guestbookPopup.style.display = guestbookPopup.style.display === 'block' ? 'none' : 'block';
+
+    if (guestbookPopup.style.display === 'block') {
+        const messageTextarea = document.getElementById('message');
+        messageTextarea.style.height = 'auto'; // 초기화
+        messageTextarea.style.height = '40px'; // 최소 높이 2줄 설정 (적절한 값으로 조정 가능)
+    }
 }
 
 // 서버에 메시지 추가하는 함수
@@ -118,8 +124,9 @@ document.getElementById('message').addEventListener('input', function() {
     adjustTextareaHeight(this); // 'this'는 현재 textarea 요소를 가리킵니다.
 });
 
-// 페이지 로드 시 textarea 높이 조절 및 서버에서 데이터 가져오기
+// 페이지 로드 시 
 document.addEventListener('DOMContentLoaded', () => {
+    // textarea 높이 조절 및 서버에서 데이터 가져오기
     const messageTextarea = document.getElementById('message');
     adjustTextareaHeight(messageTextarea);
     fetchDataFromServer();
