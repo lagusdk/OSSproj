@@ -12,6 +12,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ebfaff;
 }
 
 ul, ol {
@@ -25,8 +31,12 @@ a {
 /* header */
 
 header {
+    position: fixed;
     width: 100%;
     border-bottom: 1px solid #dddddd;
+    top: 0; /**/
+    z-index: 1000; /**/
+    background-color: #ebfaff;
 }
 
 header .inner {
@@ -282,116 +292,6 @@ footer .inner .lower p {
 .qr-code {
     max-width: 100%;
     height: auto;
-}
-
-/* profile card */
-
-body {
-    background-color: #ebfaff;
-}
-
-section {
-    width: 340px;
-    padding: 30px;
-    background-color: #ffffff;
-    margin: 50px auto;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-section nav.menu {
-    width: 100%;
-}
-
-section nav.menu::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-section nav.menu a {
-    font-size: 20px;
-    color: #666666;
-}
-
-section nav.menu a:nth-of-type(1) {
-    float: left;
-}
-
-section nav.menu a:nth-of-type(2) {
-    float: right;
-}
-
-section article.profile {
-    width: 100%;
-    text-align: center;
-}
-
-section article.profile img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    box-shadow: 5px 15px 30px rgba(173, 216, 230, 0.8);
-}
-
-section article.profile h1 {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 1;
-    color: #555555;
-    margin-bottom: 5px;
-}
-
-section article.profile h2 {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1;
-    color: #bbbbbb;
-    margin-bottom: 30px;
-}
-
-section a.btnView {
-    display: block;
-    width: 180px;
-    height: 32px;
-    margin: 0px auto 20px;
-    background-color: #444444;
-    border-radius: 16px;
-    font-weight: bold;
-    font-size: 10px;
-    color: #ffffff;
-    line-height: 32px;
-    text-align: center;
-    background: linear-gradient(45deg, #4affff, #35e0f7);
-    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.493);
-}
-
-section ul.contact li {
-    width: 100%;
-    padding: 10px 0px;
-    border-bottom: 1px solid #eeeeee;
-}
-
-section ul.contact li:last-child {
-    border-bottom: none;
-}
-
-section ul.contact li i {
-    width: 20%;
-    text-align: center;
-    color: #555555;
-    font-size: 15px;
-    text-shadow: 2px 2px 2px #dddddd;
-}
-
-section ul.contact li span {
-    text-decoration: none; /* 링크의 밑줄 제거 */  
-    color: inherit; /* 링크의 색상 제거 */
-    color: #555555;
-    font-weight: normal;
-    font-size: 11px;
-    letter-spacing: 1px;
 }
 
 /* 방명록 */ 
