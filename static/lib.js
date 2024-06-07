@@ -120,10 +120,6 @@ function fetchDataFromServer() {
 }
 
 // textarea의 입력 이벤트에 대응하여 높이 자동 조절
-//document.getElementById('message').addEventListener('input', function() {
-//    adjustTextareaHeight(this); // 'this'는 현재 textarea 요소를 가리킵니다.
-//});
-
 document.addEventListener('DOMContentLoaded', function() {
     const messageTextarea = document.getElementById('message');
     if (messageTextarea) {
