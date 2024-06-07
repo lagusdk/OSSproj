@@ -12,9 +12,9 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # CORS 설정: 다른 출처에서의 요청을 허용
 origins = [
-    "http://127.0.0.1:4000",
-    "http://localhost:4000",
-    "44.193.239.247"
+    "http://127.0.0.1:8000",
+    "http://localhost:8000",
+    "44.193.239.247" #??
 ]
 
 # CORS 미들웨어 추가
@@ -36,4 +36,4 @@ app.include_router(guest_router)
 
 # 애플리케이션 실행 (개발 모드에서는 코드 변경 시 자동으로 재시작됨)
 if __name__ == '__main__':
-    uvicorn.run("main:app", host="0.0.0.0", port=4000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

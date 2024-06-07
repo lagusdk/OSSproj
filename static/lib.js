@@ -1,4 +1,4 @@
-const host = "http://127.0.0.1:4000";
+const host = "http://127.0.0.1:8000";
 
 // 텍스트 영역의 높이를 자동으로 조정하는 함수
 function adjustTextareaHeight(textarea) {
