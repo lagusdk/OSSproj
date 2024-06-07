@@ -20,15 +20,16 @@
 /* profile card */
 
 body {
-    background-color: #ebfaff;
+    background-color: #CBD8E8;
 }
 
 section {
     width: 340px;
     padding: 30px;
     background-color: #ffffff;
+    ;
     margin: 50px auto;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 30px rgba(30,15,117, 0.1);
     border-radius: 10px;
 }
 
@@ -44,7 +45,7 @@ section nav.menu::after {
 
 section nav.menu a {
     font-size: 20px;
-    color: #666666;
+    color: #3785D8;
 }
 
 section nav.menu a:nth-of-type(1) {
@@ -65,14 +66,14 @@ section article.profile img {
     height: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
-    box-shadow: 5px 15px 30px rgba(173, 216, 230, 0.8);
+    box-shadow: 5px 15px 30px rgba(235,178,195, 0.8);
 }
 
 section article.profile h1 {
     font-weight: bold;
     font-size: 22px;
     line-height: 1;
-    color: #555555;
+    color: #1C1DAB;
     margin-bottom: 5px;
 }
 
@@ -80,7 +81,7 @@ section article.profile h2 {
     font-weight: normal;
     font-size: 12px;
     line-height: 1;
-    color: #bbbbbb;
+    color: #EBB2C3;
     margin-bottom: 30px;
 }
 
@@ -89,21 +90,21 @@ section a.btnView {
     width: 180px;
     height: 32px;
     margin: 0px auto 20px;
-    background-color: #444444;
+    background-color: #1C1DAB;
     border-radius: 16px;
     font-weight: bold;
     font-size: 10px;
     color: #ffffff;
     line-height: 32px;
     text-align: center;
-    background: linear-gradient(45deg, #4affff, #35e0f7);
-    box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.493);
+    background: linear-gradient(45deg, #E893C5, #EBB2C3);
+    box-shadow: 5px 10px 20px rgba(232,147,197, 0.493);
 }
 
 section ul.contact li {
     width: 100%;
     padding: 10px 0px;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #ADC6E5;
 }
 
 section ul.contact li:last-child {
@@ -113,9 +114,9 @@ section ul.contact li:last-child {
 section ul.contact li i {
     width: 20%;
     text-align: center;
-    color: #555555;
+    color: #1C1DAB;
     font-size: 15px;
-    text-shadow: 2px 2px 2px #dddddd;
+    text-shadow: 2px 2px 2px #ADC6E5;
 }
 
 section ul.contact li a {
@@ -127,7 +128,7 @@ section ul.contact li a:link, a:visited, a:hover, a:active {
 } 
 
 section ul.contact li span {
-    color: #555555;
+    color: #1C1DAB;
     font-weight: normal;
     font-size: 11px;
     letter-spacing: 1px;

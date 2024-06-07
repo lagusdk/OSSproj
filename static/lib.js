@@ -120,18 +120,9 @@ function fetchDataFromServer() {
 }
 
 // textarea의 입력 이벤트에 대응하여 높이 자동 조절
-document.addEventListener('DOMContentLoaded', function() {
-    const messageTextarea = document.getElementById('message');
-    if (messageTextarea) {
-        // textarea의 입력 이벤트에 대응하여 높이 자동 조절
-        messageTextarea.addEventListener('input', function() {
-            adjustTextareaHeight(this); // 'this'는 현재 textarea 요소를 가리킵니다.
-        });
-    } else {
-        console.error("Textarea with id 'message' not found!");
-    }
+document.getElementById('message').addEventListener('input', function() {
+    adjustTextareaHeight(this); // 'this'는 현재 textarea 요소를 가리킵니다.
 });
-
 
 // textarea에서 엔터 입력 시 메시지 전송
 document.getElementById('message').addEventListener('keydown', function(event) {
@@ -163,23 +154,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// 확인 필요
-document.addEventListener('DOMContentLoaded', function() {
-    const gnbLinks = document.querySelectorAll('#gnb li a');
-    
-    gnbLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // 기본 링크 이벤트 방지
-            
-            const targetId = this.getAttribute('href'); // 클릭된 링크의 href 속성 값(섹션 id) 가져오기
-            const targetSection = document.querySelector(targetId); // 해당 섹션 요소 가져오기
-            const targetOffsetTop = targetSection.offsetTop; // 섹션의 상단 위치 가져오기
-            
-            window.scrollTo({
-                top: targetOffsetTop,
-                behavior: 'smooth' // 부드러운 스크롤 적용
-            });
-        });
-    });
-});
-
+document.getElementsByTagName("video")[0].playbackRate = 0.5;
