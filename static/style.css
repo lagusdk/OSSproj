@@ -409,19 +409,19 @@ section ul.contact li span {
     right: 20px;
     background-color: #007bff;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 36px;
     z-index: 1000;
 }
 
 #guestbook-popup {
     position: fixed;
-    bottom: 60px;
+    bottom: 110px;
     right: 20px;
-    width: 300px;
-    height: 480px;
+    width: 450px;
+    height: 720px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -445,6 +445,7 @@ section ul.contact li span {
 
 #guestbook-header h2 {
     margin: 0;
+    font-size: 30pt;
 }
 
 #guestbook-form {
@@ -515,7 +516,7 @@ section ul.contact li span {
 }
 
 .message-meta {
-    font-size: 12px;
+    font-size: 25px;
     color: #666666;
 }
 
@@ -523,6 +524,6 @@ section ul.contact li span {
     background: none;
     border: none;
     color: red;
-    font-size: 16px;
+    font-size: 25px;
     cursor: pointer;
 }

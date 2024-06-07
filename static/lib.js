@@ -3,7 +3,7 @@ const host = "http://127.0.0.1:8000";
 // 텍스트 영역의 높이를 자동으로 조정하는 함수
 function adjustTextareaHeight(textarea) {
     textarea.style.height = "auto"; // 높이를 자동으로 조정하기 전에 초기화
-    textarea.style.height = textarea.scrollHeight + "px"; // 스크롤 높이로 높이 설정
+    textarea.style.height = Math.max(textarea.scrollHeight, 50) + "px"; // 최소 높이를 50px로 설정
 }
 
 // 방명록 팝업을 토글하는 함수
@@ -14,7 +14,7 @@ function toggleGuestbook() {
     if (guestbookPopup.style.display === 'block') {
         const messageTextarea = document.getElementById('message');
         messageTextarea.style.height = 'auto'; // 초기화
-        messageTextarea.style.height = '40px'; // 최소 높이 2줄 설정 (적절한 값으로 조정 가능)
+        messageTextarea.style.height = '50px'; // 최소 높이 2줄 설정 (적절한 값으로 조정 가능)
     }
 }
 
@@ -67,7 +67,7 @@ function createMessageElement(id, author, message, createdAt) {
     // 메시지 컨텐츠 부분
     const messageContent = document.createElement('div');
     messageContent.classList.add('message-content');
-    messageContent.innerHTML = message.replace(/\n/g, '<br>'); // 개행 문자를 <br>로 변환
+    messageContent.innerHTML = message.replace(/\n/g, '<br>');
 
     // 메시지 메타 정보 부분
     const messageMeta = document.createElement('div');
@@ -123,6 +123,15 @@ function fetchDataFromServer() {
 document.getElementById('message').addEventListener('input', function() {
     adjustTextareaHeight(this); // 'this'는 현재 textarea 요소를 가리킵니다.
 });
+
+// textarea에서 엔터 입력 시 메시지 전송
+document.getElementById('message').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' && !event.shiftKey) {
+        event.preventDefault(); // 기본 엔터 동작 방지 (개행 방지)
+        addMessage();
+    }
+});
+
 
 // 페이지 로드 시 
 document.addEventListener('DOMContentLoaded', () => {
