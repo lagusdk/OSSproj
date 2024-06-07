@@ -386,9 +386,11 @@ section ul.contact li i {
 }
 
 section ul.contact li span {
+    text-decoration: none; /* 링크의 밑줄 제거 */  
+    color: inherit; /* 링크의 색상 제거 */
+    color: #555555;
     font-weight: normal;
     font-size: 11px;
-    color: #555555;
     letter-spacing: 1px;
 }
 
