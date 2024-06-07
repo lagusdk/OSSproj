@@ -153,3 +153,23 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.style.display = 'none';
     });
 });
+
+// 확인 필요
+document.addEventListener('DOMContentLoaded', function() {
+    const gnbLinks = document.querySelectorAll('#gnb li a');
+    
+    gnbLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // 기본 링크 이벤트 방지
+            
+            const targetId = this.getAttribute('href'); // 클릭된 링크의 href 속성 값(섹션 id) 가져오기
+            const targetSection = document.querySelector(targetId); // 해당 섹션 요소 가져오기
+            const targetOffsetTop = targetSection.offsetTop; // 섹션의 상단 위치 가져오기
+            
+            window.scrollTo({
+                top: targetOffsetTop,
+                behavior: 'smooth' // 부드러운 스크롤 적용
+            });
+        });
+    });
+});
