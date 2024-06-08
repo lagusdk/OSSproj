@@ -1,14 +1,19 @@
 @charset "utf-8";
 @font-face {
-    font-family: 'April16th-Promise';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404-2@1.0/April16th-Promise.woff2') format('woff2');
-    font-weight: 200;
+    font-family: 'Ownglyph_noocar-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_noocar-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Danjo-bold-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
 * {
-    font-family: 'April16th-Promise';
-
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -30,6 +35,8 @@ a {
 
 /* header */
 header {
+    font-family: 'Danjo-bold-Regular';
+
     position: fixed;
     width: 100%;
     top: 0;
@@ -61,7 +68,7 @@ header .inner #gnb {
 }
 header .inner #gnb li {
     float: left;
-    width: 120px;
+    width: 130px;
 }
 header .inner #gnb li a {
     display: block;
@@ -87,12 +94,12 @@ header .inner #gnb #qrcode-link {
 figure {
     width: 100%;
     height: calc(100vh - 120px);
-    background: #1E0F75;
+    background-image: url(../static/img/brooke.jpg);
+    background-size: cover; 
+    background-position: center;
     position: relative;
     overflow: hidden;
-    padding-top: 250px;
 }
-
 figure video {
     object-fit: cover;
     width: 100%;
@@ -102,40 +109,40 @@ figure video {
     top: 0px;
     left: 0px;
 }
-
 figure .inner {
-    width: 1180px;
+    font-family: 'Danjo-bold-Regular';
+    width: 1200px;
+    height: 960px;
     margin: 0px auto;
     position: relative;
 }
-
-figure .inner h1 {
-    font: normal 120px/1;
-    color: #CBD8E8;
-    margin-bottom: 20px;
-}
-
 figure .inner p {
-    font: 16px/1.4;
-    color: #3785D8;
-    margin-bottom: 60px;
-}
-
-figure .inner a {
-    display: block;
-    width: 400px;
-    height: 30px;
-    border: 1px solid #EBB2C3;
-    font: bold 11px/30px;
+    position: absolute;
+    top: 200px;
+    font-weight: 300;
+    letter-spacing: 2px;
     color: #CBD8E8;
-    text-align: center;
-    letter-spacing: 1px;
-    transition: all 0.5s;
+    text-shadow: 0 0 10px red ;
 }
-
-figure .inner a:hover {
-    background: #CBD8E8;
-    color: #1C1DAB;
+figure .inner p:nth-child(1) {
+    top: 150px; 
+    left: 60px;
+}
+figure .inner p:nth-child(2) {
+    right: 20px; 
+    transform: rotate(90deg);
+}
+figure .inner h1 {
+    font-family: 'Ownglyph_noocar-Rg';
+    position: absolute;
+    left: 60px;
+    bottom: 210px;
+    font-size: 135px;
+    color: #000000;
+    text-shadow: #3785D8 5px 5px;
+    line-height: 1;
+    letter-spacing: -3px;
+    font-weight: 700;
 }
 
 /* news */
@@ -209,6 +216,7 @@ figure .inner a:hover {
 /* footer */
 
 footer {
+    font-family: 'Ownglyph_noocar-Rg';
     width: 100%;
     height: 100px;
     background: #1C1DAB;
@@ -253,7 +261,7 @@ footer address {
 #app-container {
     flex: 1;
     display: flex;
-    max-height: 400px;
+    max-height: 630px;
     overflow-y: auto;
     flex-direction: column;
     justify-content: space-between;
@@ -290,6 +298,7 @@ footer address {
 }
 
 #guestbook-header {
+    font-family: 'Danjo-bold-Regular';
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -305,6 +314,7 @@ footer address {
 }
 
 #guestbook-form {
+    font-family: 'Ownglyph_noocar-Rg';
     padding: 10px;
     border-top: 1px solid #ADC6E5;
     display: flex;
@@ -313,6 +323,7 @@ footer address {
 }
 
 #guestbook-form input[type="text"] {
+    font-family: 'Danjo-bold-Regular';
     flex: 1;
     width: 30%;
     margin-right: 10px;
@@ -320,6 +331,7 @@ footer address {
 }
 
 #guestbook-form textarea {
+    font-family: 'Ownglyph_noocar-Rg';
     width: 100%;
     height: auto;
     resize: none;
@@ -328,6 +340,7 @@ footer address {
 }
 
 #guestbook-form input {
+    font-family: 'Ownglyph_noocar-Rg';
     flex-grow: 1;
     margin-right: 5px;
     padding: 5px;
@@ -336,6 +349,7 @@ footer address {
 }
 
 #guestbook-form button {
+    font-family: 'Danjo-bold-Regular';
     padding: 5px 10px;
     background-color: #BF8CE1;
     color: #CBD8E8;
@@ -358,17 +372,34 @@ footer address {
 }
 
 .message {
+    width: 80%;
+    margin-left: 18%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #CBD8E8;
+    background-color: #FFFFFF;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
 .message-content {
+    font-family: 'Ownglyph_noocar-Rg';
     flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.message-content strong {
+    font-family: 'Danjo-bold-Regular';
+    display: block; /* 블록 요소로 설정하여 작성자가 한 줄을 차지하게 함 */
+    margin-bottom: 5px; /* 작성자와 내용 사이에 간격 추가 */
+}
+
+.message-content small {
+    font-family: 'Danjo-bold-Regular';
+    font-size: 10px;
+    display: block; /* 블록 요소로 설정하여 타임스탬프가 한 줄을 차지하게 함 */
+    margin-top: 5px; /* 내용과 타임스탬프 사이에 간격 추가 */
 }
 
 .message-meta {
