@@ -101,7 +101,62 @@ function deleteMessage(messageId) {
 
 // 페이지 로드 시 메시지 가져오기
 window.addEventListener('DOMContentLoaded', function() {
+    
+    // 메시지 가져오기
     getMessages();
+
+    // eins
+    const prevButton = document.querySelector('#eins .prev');
+    const nextButton = document.querySelector('#eins .next');
+    const items = document.querySelectorAll('#eins .inner-right ul li');
+    let currentIndex = 0;
+
+    function showItem(index) {
+        items.forEach((item, i) => {
+            item.style.display = i === index ? 'block' : 'none';
+        });
+
+        // 버튼 상태 업데이트
+        prevButton.classList.toggle('disabled', index === 0);
+        nextButton.classList.toggle('disabled', index === items.length - 1);
+
+        // 버튼의 배경 위치 업데이트
+        prevButton.style.backgroundPosition = index === 0 ? '0 0' : '0 -42px';
+        nextButton.style.backgroundPosition = index === items.length - 1 ? '-31px 0' : '-31px -42px';
+    }
+
+    prevButton.addEventListener('click', function () {
+        currentIndex = (currentIndex === 0) ? items.length - 1 : currentIndex - 1;
+        showItem(currentIndex);
+    });
+
+    nextButton.addEventListener('click', function () {
+        currentIndex = (currentIndex === items.length - 1) ? 0 : currentIndex + 1;
+        showItem(currentIndex);
+    });
+
+    showItem(currentIndex);
+
+    const elements = ['funf', 'vier'];
+    
+    function checkVisibility() {
+        elements.forEach(id => {
+            const element = document.getElementById(id);
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add('visible');
+            } else {
+                element.classList.remove('visible');
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+
+    // 처음 로드 시 애니메이션을 적용하기 위해 호출
+    checkVisibility();
+
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -123,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.addEventListener('click', () => {
         overlay.style.display = 'none';
     });
+
 });
 
 document.getElementsByTagName("video")[0].playbackRate = 0.5;

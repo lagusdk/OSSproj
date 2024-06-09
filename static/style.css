@@ -20,7 +20,7 @@
 
     scroll-behavior: smooth;
 
-    cursor: url(../static/img/blue-whale.png) 32 32, auto;
+    cursor: url(../static/img/butterfly.png) 12 12, auto;
 }
 
 body {
@@ -68,7 +68,7 @@ header .inner #gnb {
 }
 header .inner #gnb li {
     float: left;
-    width: 130px;
+    width: 200px;
 }
 header .inner #gnb li a {
     display: block;
@@ -111,7 +111,7 @@ figure video {
 }
 figure .inner {
     font-family: 'Danjo-bold-Regular';
-    width: 1200px;
+    width: 100%;
     height: 960px;
     margin: 0px auto;
     position: relative;
@@ -145,72 +145,301 @@ figure .inner h1 {
     font-weight: 700;
 }
 
-/* news */
+figure .inner h3{
+    font-family: 'Ownglyph_noocar-Rg';
+    color: #FFFFFF;
+    position: absolute;
+    left: 60px;
+    bottom: 150px;
+    text-align: left; 
+    vertical-align: middle;
+}
 
-#funf {
+/* aboutme */
+
+#eins {
+    position: relative;
     width: 100%;
-    padding: 200px 0px;
+    height: 600px;
+    margin-bottom: 200px;
 }
-
-#funf .inner {
-    width: 1180px;
-    margin: 0px auto;
-}
-
-#funf .inner h1 {
-    font: bold 24px/1;
-    color: #1C1DAB;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#funf .inner .wrap {
-    width: 100%;
-}
-
-#funf .inner .wrap::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-#funf .inner .wrap article {
-    width: 280px;
+#eins .inner-left {
     float: left;
-    margin-right: 20px;
+    height: 600px;
+}
+#eins .inner-left h1 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -500px;
+    z-index: 10;
+    font-family: 'Danjo-bold-Regular';
+    font-size: 50px;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+#eins .inner-left .pic {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -500px;
+    z-index: 20;
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-image: url(../static/img/circle.png);
+    background-size: 300px;
+}
+#eins .inner-left a {
+    position: absolute;
+    top: 100px;
+    z-index: 20;
+    display: block;
+    width: 20px;
+    height: 120px;
+    text-align: center;
+    font-family: 'Danjo-bold-Regular';
+    color: #FFFFFF;
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+#eins .inner-right {
+    position: absolute;
+    top: 300px;
+    right: 50%;
+    margin-right: -450px;
+    float: left;
+    width: 500px;
+    height: 400px;
+}
+#eins .inner-right ul {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+#eins .inner-right ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 300px;
+    font-family: 'Ownglyph_noocar-Rg';
+    font-size: 20px;
+    line-height: 2;
+}
+#eins .inner-right ul li:not(:first-child) {
+    display: none;
+}
+#eins .inner-right button {
+    outline: none;
+    border: none;
+    background: none;
+    width: 21px;
+    height: 41px;
+    text-indent: -9999px;
+    background-image: url(../static/img/sprite.png);
+}
+#eins .inner-right .prev {
+    position: absolute;
+    top: -42px;
+    right: 50%;
+    margin-right: -200px;
+    background-position: 0 0;
+}
+#eins .inner-right .next {
+    position: absolute;
+    top: -42px;
+    right: 50%;
+    margin-right: -230px;
+    background-position: -31px -42px;
+}
+#eins .inner-right .prev:hover {
+    background-position: 0 -42px;
+}
+#eins .inner-right .next:hover {
+    background-position: -31px -42px;
+}
+#eins .inner-right .disabled {
+    pointer-events: none;
 }
 
-#funf .inner .wrap article:last-child {
+/* interest */
+#vier {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; /* Flexbox 사용 */
+    flex-direction: column; /* 세로 방향 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */  
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#vier.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#vier .inner h1 {
+    top: 200px;
+    font-family: 'Danjo-bold-Regular';
+    color: #3785D8;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 0 0 20px #FFFFFF;
+}
+
+#vier .inner .wrap {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#vier .inner .wrap .ii {
+    width: 400px;
+    float: left;
+    margin-right: 50px;
+}
+
+#vier .inner .wrap .ii:last-child {
     margin-right: 0px;
 }
 
-#funf .inner .wrap article h2 {
+#vier .inner .wrap .ii h3 {
     margin-bottom: 10px;
 }
 
-#funf .inner .wrap article h2 a {
-    font: bold 16px/1;
+#vier .inner .wrap .ii h3 a {
+    font-family: 'Danjo-bold-Regular';
+    font: 30px/1;
     color: #1C1DAB;
 }
 
-#funf .inner .wrap article p {
-    font: 14px/1.4;
+#vier .inner .wrap .ii p {
+    font-family: 'Ownglyph_noocar-Rg';
+    font: 20px/1.4;
     color: #3785D8;
 }
 
-#funf .inner .wrap article .pic {
+#vier .inner .wrap .ii .pic {
     width: 100%;
-    height: 120px;
+    height: 250px;
     background: #1C1DAB;
-    margin-bottom: 15px;
+    border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-#funf .inner .wrap article .pic img {
+#vier .inner .wrap .ii .pic img {
+    border-radius: 10px;
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+/* content */
+
+#funf {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#funf.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#funf h1 {
+    top: 200px;
+    color: #3785D8;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Danjo-bold-Regular';
+    text-shadow: 0 0 20px #FFFFFF;
+}
+
+#funf .content {
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+    justify-content: center;
+}
+
+#funf #alpha {
+    justify-content: center;
+}
+
+#funf .content .hobby {
+    float: left;
+    width: 400px;
+    position: relative;
+    margin: 10px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;  
+}
+
+#funf .content .hobby img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#funf .content .hobby .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+#funf .content .hobby:hover img {
+    transform: scale(1.2);
+}
+
+#funf .content .hobby .overlay p {
+    margin: 0;
+    font-family: 'Danjo-bold-Regular';
+    font-size: 20px;
+    text-align: center;
+}
+
+#funf .content .hobby:hover .overlay {
+    opacity: 1;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
 /* footer */

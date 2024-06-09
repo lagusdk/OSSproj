@@ -28,11 +28,9 @@
         <div class="inner">
             <h1><a href="index.html">TEAPOT</a></h1> <!--링크 ok-->
             <ul id="gnb"> <!-- global navigation bar -->
-                <li><a href="#eins">ABOUT ME</a></li> <!--링크 ok ../menu/abt.html-->
-                <li><a href="#zwei">MAJOR</a></li>
-                <li><a href="#drei">SKILL</a></li>
+                <li><a href="#eins">ABOUT ME</a></li>
                 <li><a href="#vier">INTEREST</a></li>
-                <li><a href="#funf">GALLERY</a></li>
+                <li><a href="#funf">HOBBY</a></li>
                 <li><a id="qrcode-link"><i class="fas fa-regular fa-qrcode"></i></a></li> <!-- 파비콘 ok-->
             </ul>
         </div>
@@ -43,49 +41,103 @@
         <div class="inner">
             <p>410 Gone</p>
             <p>404<br>Not Found</p>
-            <h1>현아 Hyeona</h1>
+            <h1>현아</h1>
+            <h3>The requested entity body is short and stout.<br>
+                Tip me over and pour me out.</h3>
         </div>
     </figure>
 
-    <section id="eins"></section>
-    <section id="zwei"></section>
-    <section id="drei"></section>
-    <section id="vier"></section>
-    
-    <section id="funf">
+    <section id="eins">
+        <div class="inner-left">
+            <h1>ABOUT ME</h1>
+            <p class="pic"><a>2004.08.14</a></p>
+        </div>
+        <div class="inner-right">
+            <ul>
+                <li>
+                    이름: 라현아<br>
+                    나이: 21세(만 19세)<br>
+                    학력: 광운대학교 정보융합학부 비주얼테크놀로지전공 재학<br>
+                    ETC<br>
+                    &middot; 2019.02-2021.02 KAIST IP-CEO 10기 심화과정 수료<br>
+                    &middot; 2023.07 KAIST IP-CEO 벤처전략분석 프로그램
+                </li>
+                <li>
+                    교내 동아리<br>
+                    &middot; 2023.03- 컴퓨터/프로그래밍 동아리 COM's 57기<br>
+                    &middot; 2023.09- Google Developer Student Clubs 1기<br>
+                    &middot; 2023.12- App+Game+Design 취업 동아리 LogIn 12기 (현재 쉬는중)<br>
+                    &middot; 2023.12- 게임개발 동아리 LEVEL UP<br>
+                </li>
+                <li>
+                    자격증: ITQ, GTQ 2급, ICDL<br>
+                    교내 수상내역<br>
+                    &middot; 2023.05.10 광운대학교 글쓰기대회 산문분야 가작<br>
+                    &middot; 2023.05.31 광운대학교 공학설계입문 작품전시회 최우수상<br>
+                    &middot; 2023.06.29 광운대학교 MODI 활용 경진대회 특별상
+                </li>
+            </ul>
+            <button class="prev">이전</button>
+            <button class="next">다음</button>
+        </div>
+    </section>
+    <section id="vier">
         <div class="inner">
-            <h1>RECENT NEWS</h1>
+            <h1><br><br>INTEREST</h1>
             <div class="wrap">
-                <article>
+                <div class="ii">
                     <div class="pic">
-                        <img src="" alt="1번째 콘텐츠 이미지">
+                        <img src="../static/img/Wf.jpg" alt="1이미지">
                     </div>
-                    <h2><a href="#">어쩌고</a></h2>
-                    <p>저쩌고</p>
-                </article>
-                <article>
+                    <h3><a>Web Frontend</a></h3>
+                    <p>HTML/CSS, JS +a</p>
+                </div>
+                <div class="ii">
                     <div class="pic">
-                        <img src="" alt="2번째 콘텐츠 이미지">
+                        <img src="../static/img/Gc.jpg" alt="2이미지">
                     </div>
-                    <h2><a href="#">어쩌고</a></h2>
-                    <p>저쩌고</p>
-                </article>
-                <article>
-                    <div class="pic">
-                        <img src="" alt="3번째 콘텐츠 이미지">
-                    </div>
-                    <h2><a href="#">어쩌고</a></h2>
-                    <p>저쩌고</p>
-                </article>
-                <article>
-                    <div class="pic">
-                        <img src="" alt="4번째 콘텐츠 이미지">
-                    </div>
-                    <h2><a href="#">어쩌고</a></h2>
-                    <p>저쩌고</p>
-                </article>
+                    <h3><a>Game Client</a></h3>
+                    <p>C#, Unity +a</p>
+                </div>
             </div>
         </div>
+    </section>
+    <section id="funf">
+        <h1><br><br>HOBBY</h1>
+        <div class="content">
+            <div class="hobby" id="alpha">
+                <img src="../static/img/image3.jpg" alt="Image 1">
+                <div class="overlay">
+                    <p>Write a Novel</p>
+                </div>
+            </div>
+            <div class="hobby" id="alpha">
+                <img src="../static/img/h_read.jpg" alt="Image 2">
+                <div class="overlay">
+                    <p>Read a Novel</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="hobby">
+                <img src="../static/img/h_illust.jpg" alt="Image 3">
+                <div class="overlay">
+                    <p>Draw a Illust</p>
+                </div>
+            </div>
+            <div class="hobby" id="beta">
+                <img src="../static/img/h_music.jpg" alt="Image 4">
+                <div class="overlay">
+                    <p>Listen to Music</p>
+                </div>
+            </div>
+            <div class="hobby" id="beta">
+                <img src="../static/img/h_game.jpg" alt="Image 5">
+                <div class="overlay">
+                    <p>Play a Game</p>
+                </div>
+            </div>
+        </div>            
     </section>
 
     <!-- footer (completed)-->
