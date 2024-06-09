@@ -14,7 +14,7 @@
 }
 
 * {
-    font-family: 'April16th-Promise';
+    font-family: 'Danjo-bold-Regular';
 
     margin: 0px;
     padding: 0px;
@@ -85,6 +85,7 @@ section article.profile h1 {
 }
 
 section article.profile h2 {
+    font-family: 'Ownglyph_noocar-Rg';
     font-weight: normal;
     font-size: 12px;
     line-height: 1;
@@ -128,6 +129,7 @@ section ul.contact li i {
 
 section ul.contact li a {
     text-decoration: none; 
+    font-family: 'Ownglyph_noocar-Rg';
 } 
 
 section ul.contact li a:link, a:visited, a:hover, a:active {

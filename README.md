@@ -6,9 +6,8 @@
 
 활용한 오픈소스들의 목록 및 링크
 
-1. OSS ch.10 프로필 카드: 공유 가능한 프로필 카드 제작
-2. OSS ch.10 기업 페이지: video 삽입
-3. 김지민 포트폴리오: About Me의 <ul> 구성 참고
+1. OSS ch.10 프로필 카드: qr -> profile card 활용
+2. OSS ch.10 기업 페이지: header 및 figure 구성시 참고
 
 ---
 
@@ -16,9 +15,6 @@
 #FFFFFF   #1E0F75   #1C1DAB
 #3785D8   #ADC6E5   #BF8CE1
 #E893C5   #EBB2C3   #CBD8E8
-
-- qr.html 수정
-- 배포
 
 :: `배포` ::
 포트 : 4000
