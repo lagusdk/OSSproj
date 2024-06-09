@@ -12,11 +12,17 @@
 ---
 
 색상코드
+
 #FFFFFF   #1E0F75   #1C1DAB
+
 #3785D8   #ADC6E5   #BF8CE1
+
 #E893C5   #EBB2C3   #CBD8E8
 
 ---
 
-프론트엔드 구현(방명록 기능안함 ver)
+- 프론트엔드 구현(방명록 기능안함 ver)
 https://lagusdk.github.io/OSSproj/static/
+
+- docker run 이후(방명록 기능함 ver)
+http://127.0.0.1:8000/static/index.html
