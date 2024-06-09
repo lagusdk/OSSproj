@@ -13,8 +13,9 @@ origins = [
     "http://localhost",
     "http://localhost:5500",
     "http://localhost:8000",
-    #"https://lagusdk.github.io/OSSproj", #현재필요X
-    #"44.193.239.247" #현재필요X
+    "44.193.239.247",
+    "44.193.239.247/8000",
+    "44.193.239.247/4000"
 ]
 
 # CORS 미들웨어 추가
