@@ -598,6 +598,7 @@ footer address {
     margin-bottom: auto;
     padding: 10px;
     overflow-y: auto;
+    height: 312px;
 }
 
 .message {
@@ -607,7 +608,7 @@ footer address {
     justify-content: space-between;
     align-items: center;
     background-color: #FFFFFF;
-    padding: 10px;
+    padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
@@ -615,11 +616,11 @@ footer address {
 .message-content {
     font-family: 'Ownglyph_noocar-Rg';
     flex-grow: 1;
-    margin-bottom: 8px;
 }
 
 .message-content strong {
     font-family: 'Danjo-bold-Regular';
+    font-size: 12px;
     display: block; /* 블록 요소로 설정하여 작성자가 한 줄을 차지하게 함 */
     margin-bottom: 5px; /* 작성자와 내용 사이에 간격 추가 */
 }
